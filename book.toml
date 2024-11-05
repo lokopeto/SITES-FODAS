@@ -1,0 +1,29 @@
+[book]
+authors = ["lokopeto", "Gonna"]
+title = "SITES FODAS"
+language = "pt"
+multilingual = false
+description = "SITES MUITO FODAS!"
+src = "src"
+
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+additional-css = ["custom.css"]
+
+[output.html.fold]
+enable = true   # whether or not to enable section folding
+level = 3         # the depth to start folding
+
+[output.html.search]
+enable = true            # enables the search feature
+limit-results = 30       # maximum number of search results
+teaser-word-count = 30   # number of words used for a search result teaser
+use-boolean-and = true   # multiple search terms must all match
+boost-title = 2          # ranking boost factor for matches in headers
+boost-hierarchy = 1      # ranking boost factor for matches in page names
+boost-paragraph = 1      # ranking boost factor for matches in text
+expand = true            # partial words will match longer terms
+heading-split-level = 3  # link results to heading levels
+copy-js = true           # include Javascript code for search
